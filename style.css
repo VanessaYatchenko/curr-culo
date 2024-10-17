@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF5F2; 
+    color: #333;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px; 
+}
+
+header {
+    background-color: #FFD1DC; 
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #FF9AA2;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+header nav a {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFD1DC; 
+    margin: 50px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coluna {
+    flex: 1;
+    margin: 0 30px;
+}
+
+.coluna h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.7em;
+}
+
+.coluna p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+.divider {
+    width: 5px; 
+    background-color: #DAA520; 
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #FFD1DC; 
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    font-size: 1em;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .divider {
+        display: none; 
+    }
+
+    header h1 {
+        font-size: 1.5em; 
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header nav a {
+        font-size: 0.9em;
+    }
+
+    .coluna h2 {
+        font-size: 1.4em;
+    }
+
+    .coluna p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
